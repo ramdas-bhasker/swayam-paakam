@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu | SWAYAMPAAKAM – Signature South Indian Specials</title>
+  <meta name="description" content="Explore the complete SWAYAMPAAKAM menu: Idli Specials, Vada Specials, Dosa Specials, Poori Specials, Healthy Bites, Bagara Rice, Biryanis, Combo Rice Bowls, Snacks and Beverages." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="SWAYAMPAAKAM Home">
+        <img src="assets/images/swayampakam-logo.png" alt="SWAYAMPAAKAM" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="menu.html" class="nav-link active">Our Menu</a></li>
+          <li><a href="why-choose-us.html" class="nav-link">Why Choose Us</a></li>
+          <li><a href="franchise.html" class="nav-link">Franchise</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-turmeric btn-header-franchise js-open-franchise-modal">
+          Become a Franchise Partner
+        </button>
+        <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="navMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+      <img src="assets/images/hero-spread.jpg" alt="SWAYAMPAAKAM South Indian Menu Spread" class="page-hero-bg" />
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-inner reveal is-visible">
+        <div class="eyebrow eyebrow--left eyebrow--light">SIGNATURE SOUTH INDIAN SPECIALS</div>
+        <h1 class="heading-display heading-xl">
+          Our <span class="editorial-italic" style="color: var(--turmeric-yellow);">Culinary Menu</span>
+        </h1>
+        <p class="page-hero-desc">
+          Prepared fresh throughout the day with stone-ground batters, aromatic spices, and zero palmolein oil. Explore our 14 signature categories of South Indian tiffins, Kodi Kura specials, Bagara rice meals, biryanis, and beverages.
+        </p>
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span class="current">Our Menu</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- FULL MENU SECTION -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <div class="menu-editorial-hero reveal">
+          <div>
+            <div class="eyebrow eyebrow--left">TELUGODI VANTALU &bull; TRADITION IN EVERY COURSE</div>
+            <h2 class="heading-display heading-lg" style="color: var(--maroon-primary); margin-bottom: 1.15rem;">
+              Freshly Prepared <span class="editorial-italic">Tiffins &amp; Rice Meals</span>
+            </h2>
+            <p class="lead-text">
+              Filter by course below or browse all 14 SWAYAMPAAKAM categories—featuring Guntur Karam Idli, Kodi Kura Chitti Garelu, Nellore Ghee Karam Dosa, Healthy Millet Bites, Bagara Rice Specials, Dum Biryanis, Sambar Rice Meals, and Paratha Combos.
+            </p>
+          </div>
+
+          <div class="menu-editorial-visuals">
+            <div class="menu-photo-tall">
+              <img src="assets/images/dosa-chicken.jpg" alt="Crispy Golden Dosa served with spicy Andhra Kodi Kura" />
+              <div class="menu-photo-caption">Signature Tiffins &amp; Kodi Kura Specials</div>
+            </div>
+            <div class="menu-photo-accent">
+              <img src="assets/images/biryani-special.jpg" alt="Aromatic South Indian Biryani and Bagara Rice cooked with traditional spices" />
+              <div class="menu-photo-caption">Bagara Rice &amp; Dum Biryanis</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Category Filter Tabs -->
+        <div class="menu-filter-bar reveal" role="tablist" aria-label="Menu Categories">
+          <button type="button" class="menu-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Categories</button>
+          <button type="button" class="menu-filter-btn" data-filter="tiffins" role="tab" aria-selected="false">Idli, Vada, Dosa &amp; Poori</button>
+          <button type="button" class="menu-filter-btn" data-filter="rice" role="tab" aria-selected="false">Bagara, Biryani &amp; Rice</button>
+          <button type="button" class="menu-filter-btn" data-filter="healthy-combos" role="tab" aria-selected="false">Healthy Bites &amp; Combos</button>
+          <button type="button" class="menu-filter-btn" data-filter="snacks-beverages" role="tab" aria-selected="false">Parathas, Snacks &amp; Beverages</button>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="menu-editorial-columns" id="menuColumnsGrid">
+          <!-- 1. Idli Specials -->
+          <div class="menu-category-block reveal" data-group="tiffins">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Idli Specials</h3>
+              <span class="menu-category-subtitle">Steamed &amp; Feather-Soft</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Plain Ghee Idli</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹99</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Guntur Karam Idli <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹129</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Idli</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹129</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Rasam Idli</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹129</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2. Vada Specials -->
+          <div class="menu-category-block reveal" data-group="tiffins">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Vada Specials</h3>
+              <span class="menu-category-subtitle">Crisp &amp; Golden</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Plain Vada</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹119</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Perugu Vada / Dahi Vada</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chitti Garelu</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Vada</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹179</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Kodi Kura Chitti Garelu <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3. Dosa Specials -->
+          <div class="menu-category-block reveal" data-group="tiffins">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Dosa Specials</h3>
+              <span class="menu-category-subtitle">Griddle-Roasted Classics</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Ghee Plain Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹119</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Nellore Ghee Karam Dosa <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Ghee Podi Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Ghee Masala Dosa <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹169</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Kadapa Karam Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹169</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Onion Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹169</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Veg Pizza Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹189</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Paneer Rajaseab Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Egg Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Kheema Ghee Dosa <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹189</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Kheema Egg Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹219</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Kodi Kura Plain Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Rajaseab Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Pizza Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4. Swayampaakam Healthy Bites -->
+          <div class="menu-category-block reveal" data-group="healthy-combos">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Swayampaakam Healthy Bites</h3>
+              <span class="menu-category-subtitle">Nutritious &amp; Wholesome</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Pesaratttu Plain</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Ragi Dosa Plain</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Jonna Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Brown Rice Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Onion Ragi Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹179</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Onion Jonna Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹179</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Onion Pesarattu <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹179</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Onion Brown Rice Dosa</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹179</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 5. Poori Specials -->
+          <div class="menu-category-block reveal" data-group="tiffins">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Poori Specials</h3>
+              <span class="menu-category-subtitle">Fluffy &amp; Comforting</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Aloo Khurma</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Mango Ras (Seasonal)</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹169</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Egg Fry</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹229</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Paneer Khurma</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Dum Ka Chicken <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Chicken 65</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹279</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Chicken Manchurian</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹279</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Poori with Chicken Kheema</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹279</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 6. Bagara Rice Specials -->
+          <div class="menu-category-block reveal" data-group="rice">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Bagara Rice Specials</h3>
+              <span class="menu-category-subtitle">Telangana &amp; Deccan Favourites</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Swayampaakam Spl Paneer Bagara Rice <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Egg Fry Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹229</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Fry Piece Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Kodi Kura Bagara Rice <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken 65 Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Dum Ka Chicken Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 7. Chicken Bagara Rice Specials -->
+          <div class="menu-category-block reveal" data-group="rice">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Chicken Bagara Rice Specials</h3>
+              <span class="menu-category-subtitle">Signature Non-Veg Bagara</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Lollipop Bagara Rice <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Drum Stick Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Crispy Chicken Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Kuffi Chicken Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Afghani Chicken Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Manchurian Bagara Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 8. Biryani Specials -->
+          <div class="menu-category-block reveal" data-group="rice">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Biryani Specials</h3>
+              <span class="menu-category-subtitle">Slow-Cooked Dum Perfection</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Swayampaakam Spl Paneer Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Swayampaakam Spl Egg Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹249</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Spl Chicken Dum Biryani <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Spl Chicken Fry Piece Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken 65 Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Manchurian Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Lollipop Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Swayampaakam Spl Chicken Biryani <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹347</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Kheema Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Drumstick Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Crispy Chicken Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Kafli Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Afghani Biryani</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹349</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 9. White Rice Specials -->
+          <div class="menu-category-block reveal" data-group="rice">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">White Rice Specials</h3>
+              <span class="menu-category-subtitle">Homely Everyday Meals</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Pulihora / Tamarind Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹179</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Curd Rice / Perugannam</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Vindu Bhojanam <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹249</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Vindu Bhojanam (Special)</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 10. Sambar Rice Specials -->
+          <div class="menu-category-block reveal" data-group="rice">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Sambar Rice Specials</h3>
+              <span class="menu-category-subtitle">Soulful &amp; Aromatic</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Cashew and Papad <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹179</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Masala Vada</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹219</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Aloo Bajji</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹219</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Alasanda Vada</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Egg Fingers</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹249</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Egg Omelet</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹249</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Chicken 65 <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Chicken Fingers</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Chicken Lollipop</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Chicken Drum Stick</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Crispy Chicken</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice with Kuffi Chicken</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 11. Paratha Specials -->
+          <div class="menu-category-block reveal" data-group="snacks-beverages">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Paratha Specials</h3>
+              <span class="menu-category-subtitle">Flaky &amp; Layered</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Paratha with Veg Khurma</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹219</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Paratha with Paneer Khurma</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Paratha with Egg Fry</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹229</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Paratha with Dum Ka Chicken <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Paratha with Chicken Manchurian</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹279</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Paratha with Chicken 65</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹279</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 12. Combo Rice Bowls -->
+          <div class="menu-category-block reveal" data-group="healthy-combos">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Combo Rice Bowls</h3>
+              <span class="menu-category-subtitle">Complete Balanced Meals</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice and Curd Rice <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹299</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Bagara Rice and Curd Rice</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹199</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Sambar Rice and Curd Rice (Regular)</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Bagara Rice and Curd Rice (Special)</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹259</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 13. Snacks -->
+          <div class="menu-category-block reveal" data-group="snacks-beverages">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Snacks</h3>
+              <span class="menu-category-subtitle">Evening &amp; Starter Favorites</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Masala Vada</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹99</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Aloo Baji</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹99</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Alasanda Vada <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹139</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Ponganalu</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹139</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Plain Omelet</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹99</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Masala Omelet</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹129</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Egg Fingers</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹139</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken 65 <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Fingers</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Lollipop</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Chicken Kafli</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Crispy Chicken</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹239</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 14. Beverages -->
+          <div class="menu-category-block reveal" data-group="snacks-beverages">
+            <div class="menu-category-header">
+              <h3 class="menu-category-title">Beverages</h3>
+              <span class="menu-category-subtitle">Traditional Refreshments</span>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Swayampaakam Chai <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹40</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Elachi Chai</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹50</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Butter Milk</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹60</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Coffee</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹70</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Nanna Kaju Soda Hand Made</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹70</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Badam Milk</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹120</span>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-line">
+                  <span class="menu-item-name">Swayampaakam Lassi <span class="menu-badge-must">Must Try</span></span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">₹120</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-footer-cta reveal">
+          <p class="menu-footer-note">
+            Every dish is freshly prepared to order using pure oils, stone-ground batters, and traditional recipes.
+          </p>
+          <button type="button" class="btn btn-turmeric" id="viewFullMenuBtn">
+            <span>View All Menu Categories</span>
+            <i class="fa-solid fa-book-open"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE FOOD SHOWCASE -->
+    <section class="showcase-section" id="showcase">
+      <div class="container">
+        <div class="showcase-header reveal">
+          <div class="showcase-header-left">
+            <div class="eyebrow eyebrow--left">CULINARY CRAFTSMANSHIP</div>
+            <h2 class="heading-display heading-lg">
+              Made Fresh. <span class="editorial-italic">Served with Love.</span>
+            </h2>
+          </div>
+          <div class="showcase-header-right">
+            <p class="lead-text">
+              Every meal is an experience inspired by authentic South Indian food traditions.
+            </p>
+          </div>
+        </div>
+
+        <div class="showcase-editorial-grid">
+          <figure class="showcase-piece showcase-piece--1 reveal">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/menu-items1.jpg" alt="SWAYAMPAAKAM Royal Combo: Sweet Aamras and Hot Fluffy Poori" loading="lazy" />
+            </div>
+            <figcaption class="showcase-meta">
+              <h3 class="showcase-dish-title">Poori with Mango Ras</h3>
+              <span class="showcase-dish-tag">Sweet Seasonal Aamras &amp; Hot Fluffy Poori</span>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-piece showcase-piece--2 reveal reveal-delay-1">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/menu-items2.jpg" alt="SWAYAMPAAKAM Sambar Rice Combos with Chicken 65, Chicken Fingers, Aloo Bajji and Masala Vada" loading="lazy" />
+            </div>
+            <figcaption class="showcase-meta">
+              <h3 class="showcase-dish-title">Sambar Rice Combos</h3>
+              <span class="showcase-dish-tag">With Chicken 65, Chicken Fingers, Aloo Bajji or Vada</span>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-piece showcase-piece--3 reveal">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/menu-items3.jfif" alt="SWAYAMPAAKAM Sambar Rice Meal with Chicken 65, Papad and Beverage" loading="lazy" />
+            </div>
+            <figcaption class="showcase-meta">
+              <h3 class="showcase-dish-title">Sambar Rice Meal</h3>
+              <span class="showcase-dish-tag">Sambar Rice, Chicken 65 / Fry &amp; Crispy Papad</span>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-piece showcase-piece--4 reveal reveal-delay-1">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/menu-items4.jfif" alt="SWAYAMPAAKAM Paratha Meal with Dum Ka Chicken, Chicken 65 and Egg" loading="lazy" />
+            </div>
+            <figcaption class="showcase-meta">
+              <h3 class="showcase-dish-title">Paratha Specials Meal</h3>
+              <span class="showcase-dish-tag">Flaky Parathas, Dum Ka Chicken &amp; Chicken 65</span>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-piece showcase-piece--5 reveal">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/menu-items5.jfif" alt="SWAYAMPAAKAM Family Breakfast Combo featuring Dosa, Idli, Vada and Chai" loading="lazy" />
+            </div>
+            <figcaption class="showcase-meta">
+              <h3 class="showcase-dish-title">Family Breakfast Combo</h3>
+              <span class="showcase-dish-tag">Golden Dosa, Soft Idli, Crispy Vada &amp; Chai</span>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-piece showcase-piece--6 reveal reveal-delay-1">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/menu-items6.jfif" alt="SWAYAMPAAKAM Dosa with Spicy Andhra Chicken Curry (Kodi Kura)" loading="lazy" />
+            </div>
+            <figcaption class="showcase-meta">
+              <h3 class="showcase-dish-title">Kodi Kura Dosa Special</h3>
+              <span class="showcase-dish-tag">Crispy Dosas Served with Spicy Chicken Curry</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="brand-logo" aria-label="SWAYAMPAAKAM Home">
+            <img src="assets/images/swayampakam-logo.png" alt="SWAYAMPAAKAM" />
+          </a>
+          <p class="footer-brand-desc">
+            Celebrating the richness of authentic South Indian cuisine with freshly prepared tiffins, signature rice specials, and hygienic homely cooking without palmolein oil.
+          </p>
+          <p class="footer-tagline">"Authentic Taste. Homely Goodness."</p>
+          <div class="footer-socials" aria-label="Social Media Links">
+            <a href="contact.html" class="social-link" aria-label="SWAYAMPAAKAM on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="contact.html" class="social-link" aria-label="SWAYAMPAAKAM on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="contact.html" class="social-link" aria-label="SWAYAMPAAKAM on YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="franchise.html">Franchise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Our Menu</h3>
+          <ul class="footer-links">
+            <li><a href="#menu" data-menu-jump="tiffins">Idli &amp; Vada Specials</a></li>
+            <li><a href="#menu" data-menu-jump="tiffins">Dosa &amp; Poori Specials</a></li>
+            <li><a href="#menu" data-menu-jump="healthy-combos">Swayampaakam Healthy Bites</a></li>
+            <li><a href="#menu" data-menu-jump="rice">Bagara &amp; Biryani Specials</a></li>
+            <li><a href="#menu" data-menu-jump="rice">White Rice &amp; Sambar Rice</a></li>
+            <li><a href="#menu" data-menu-jump="healthy-combos">Combo Rice Bowls</a></li>
+            <li><a href="#menu" data-menu-jump="snacks-beverages">Parathas, Snacks &amp; Beverages</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Get in Touch</h3>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>[Restaurant Address Placeholder – To Be Confirmed]</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span>[Phone Number Placeholder – To Be Confirmed]</span></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>[Email Address Placeholder – To Be Confirmed]</span></li>
+            <li><i class="fa-regular fa-clock" aria-hidden="true"></i><span>[Business Hours Placeholder – To Be Confirmed]</span></li>
+          </ul>
+          <button type="button" class="btn btn-turmeric js-open-franchise-modal" style="width: 100%; padding: 0.9rem 1.2rem; font-size: 0.8rem;">
+            <span>Become a Franchise Partner</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SWAYAMPAAKAM. All Rights Reserved.</p>
+        <p>Authentic South Indian Restaurant &bull; Tiffins &bull; Rice Specials &bull; Franchise</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FRANCHISE ENQUIRY POPUP MODAL -->
+  <div class="modal-backdrop" id="franchiseModal" role="dialog" aria-modal="true" aria-labelledby="franchiseModalTitle" aria-describedby="franchiseModalSubtitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="modal-close-btn" id="closeFranchiseModal" aria-label="Close Franchise Enquiry Popup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div id="franchiseFormView">
+        <div class="modal-header">
+          <div class="eyebrow eyebrow--left" style="margin-bottom: 0.45rem;">FRANCHISE PARTNERSHIP ENQUIRY</div>
+          <h2 class="modal-title" id="franchiseModalTitle">Let's Build Something Delicious Together!</h2>
+          <p class="modal-subtitle" id="franchiseModalSubtitle">
+            Interested in bringing SWAYAMPAAKAM to your city? Share your details and our team will get in touch.
+          </p>
+        </div>
+
+        <form class="franchise-form" id="franchiseEnquiryForm" novalidate>
+          <div class="form-group" id="groupFullName">
+            <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" autocomplete="name" required />
+            <span class="form-error" id="errorFullName" role="alert">Please enter your full name (at least 2 characters).</span>
+          </div>
+
+          <div class="form-group" id="groupMobile">
+            <label for="mobileNumber" class="form-label">Mobile Number <span class="req">*</span></label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" class="form-control" placeholder="e.g. +91 98765 43210" autocomplete="tel" required />
+            <span class="form-error" id="errorMobile" role="alert">Please enter a valid 10-digit Indian mobile number (starting with 6–9).</span>
+          </div>
+
+          <div class="form-group" id="groupEmail">
+            <label for="emailAddress" class="form-label">Email Address</label>
+            <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="you@example.com (Optional)" autocomplete="email" />
+            <span class="form-error" id="errorEmail" role="alert">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group" id="groupCity">
+            <label for="cityLocation" class="form-label">City / Location <span class="req">*</span></label>
+            <input type="text" id="cityLocation" name="cityLocation" class="form-control" placeholder="Enter target city or locality" autocomplete="address-level2" required />
+            <span class="form-error" id="errorCity" role="alert">Please enter your city or preferred location.</span>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="investmentRange" class="form-label">Preferred Investment Range</label>
+            <select id="investmentRange" name="investmentRange" class="form-control">
+              <option value="">Select Investment Range (Optional)</option>
+              <option value="Below ₹5 Lakhs">Below ₹5 Lakhs</option>
+              <option value="₹5–10 Lakhs">₹5–10 Lakhs</option>
+              <option value="₹10–20 Lakhs">₹10–20 Lakhs</option>
+              <option value="₹20–30 Lakhs">₹20–30 Lakhs</option>
+              <option value="Above ₹30 Lakhs">Above ₹30 Lakhs</option>
+              <option value="Not Decided Yet">Not Decided Yet</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="enquiryMessage" class="form-label">Message (Optional)</label>
+            <textarea id="enquiryMessage" name="enquiryMessage" class="form-control" placeholder="Tell us about your background, preferred locality, or any questions..."></textarea>
+          </div>
+
+          <div class="form-submit-wrap">
+            <button type="submit" class="btn btn-turmeric">
+              <span>Submit Franchise Enquiry</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-success-state" id="franchiseSuccessView" aria-live="polite">
+        <div class="success-emblem"><i class="fa-solid fa-check"></i></div>
+        <h3 class="modal-success-title">Enquiry Details Validated &amp; Recorded</h3>
+        <p class="modal-success-desc">
+          Thank you for your interest in partnering with <strong>SWAYAMPAAKAM</strong>. Your enquiry details have been validated in this interactive frontend preview and structured for backend CRM / email integration:
+        </p>
+        <dl class="modal-summary-dl" id="enquirySummaryList"></dl>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-maroon" id="resetFranchiseFormBtn"><span>Submit Another Enquiry</span></button>
+          <button type="button" class="btn btn-turmeric" id="doneFranchiseModalBtn"><span>Close Window</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

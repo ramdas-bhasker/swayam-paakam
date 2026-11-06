@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | SWAYAMPAAKAM – Authentic South Indian Restaurant</title>
+  <meta name="description" content="Discover the story behind SWAYAMPAAKAM. Celebrating the richness of authentic South Indian cuisine with quality ingredients, hygienic preparation, and homely cooking without palmolein oil." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="SWAYAMPAAKAM Home">
+        <img src="assets/images/swayampakam-logo.png" alt="SWAYAMPAAKAM" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li><a href="menu.html" class="nav-link">Our Menu</a></li>
+          <li><a href="why-choose-us.html" class="nav-link">Why Choose Us</a></li>
+          <li><a href="franchise.html" class="nav-link">Franchise</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-turmeric btn-header-franchise js-open-franchise-modal">
+          Become a Franchise Partner
+        </button>
+        <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="navMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+      <img src="assets/images/hero-spread.jpg" alt="Authentic South Indian culinary spread at SWAYAMPAAKAM" class="page-hero-bg" />
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-inner reveal is-visible">
+        <div class="eyebrow eyebrow--left eyebrow--light">OUR STORY &amp; HERITAGE</div>
+        <h1 class="heading-display heading-xl">
+          Bringing the Taste of Home to <span class="editorial-italic" style="color: var(--turmeric-yellow);">Every Table</span>
+        </h1>
+        <p class="page-hero-desc">
+          Rooted in time-honoured South Indian culinary traditions, SWAYAMPAAKAM was born from a simple belief: restaurant food should carry the same purity, care, and warmth as a meal cooked at home.
+        </p>
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span class="current">About Us</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- SPLIT EDITORIAL STORY SECTION -->
+    <section class="about-section section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-main-image-wrap">
+              <img src="assets/images/idli-sambar.jpg" alt="Freshly steamed South Indian idli and sambar" />
+            </div>
+            <div class="about-secondary-image">
+              <img src="assets/images/dosa-chicken.jpg" alt="Crispy golden Dosa served with spicy Andhra Kodi Kura" />
+            </div>
+            <div class="about-seal" aria-hidden="true">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Telugodi Vantalu</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal reveal-delay-1">
+            <div class="eyebrow eyebrow--left">THE MEANING OF SWAYAMPAAKAM</div>
+            <h2 class="heading-display heading-lg">
+              Crafted with Care. <span class="editorial-italic">Served with Pride.</span>
+            </h2>
+            <p>
+              <strong>SWAYAMPAAKAM</strong> celebrates the richness of authentic South Indian cuisine. We believe great food begins with quality ingredients, traditional flavours, hygienic preparation and the warmth of homely cooking.
+            </p>
+            <p>
+              In traditional South Indian households, <em>Swayampaakam</em> signifies food prepared personally with devotion, uncompromising hygiene, and pure ingredients. We bring that exact ethos to our kitchen every single morning.
+            </p>
+            <p>
+              From everyday breakfast favourites to satisfying rice specials and delicious meals, every dish is prepared to bring people together.
+            </p>
+
+            <div class="about-signature-row">
+              <a href="menu.html" class="btn btn-maroon">
+                <span>Explore Our Signature Menu</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <div class="about-promise">
+                <div class="about-promise-icon">
+                  <i class="fa-solid fa-droplet-slash"></i>
+                </div>
+                <div class="about-promise-text">
+                  <strong>Zero Palmolein Oil</strong>
+                  <span>Pure, wholesome cooking every day</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL QUOTE BAND -->
+    <section class="editorial-quote-band">
+      <div class="container reveal">
+        <div class="eyebrow eyebrow--light">OUR CULINARY PROMISE</div>
+        <blockquote class="editorial-quote-text">
+          "When food is prepared with honest ingredients, freshly ground spices, and the patience of a home kitchen, every plate becomes a celebration of tradition."
+        </blockquote>
+        <div class="editorial-quote-author">SWAYAMPAAKAM &mdash; Authentic Taste. Homely Goodness.</div>
+      </div>
+    </section>
+
+    <!-- HERITAGE & CRAFTSMANSHIP EDITORIAL ROWS -->
+    <section class="section-padding" style="background-color: var(--warm-ivory);">
+      <div class="container">
+        <div class="editorial-story-rows">
+          <!-- Row 1 -->
+          <div class="editorial-story-row reveal">
+            <div class="editorial-story-media">
+              <img src="assets/images/spices-heritage.jpg" alt="Traditional Indian spices and roasted lentils" loading="lazy" />
+            </div>
+            <div class="editorial-story-copy">
+              <div class="eyebrow eyebrow--left">TRADITIONAL PREPARATION</div>
+              <h3 class="heading-md">Fresh Batters, Stone-Ground Chutneys &amp; Whole Spices</h3>
+              <p>
+                Authentic South Indian tiffins rely on natural fermentation and freshly ground accompaniments. Our idli and dosa batters are prepared daily using carefully selected rice and urad dal, yielding feather-soft idlis and crisp, golden roasts.
+              </p>
+              <p>
+                Our chutneys, karampodis, and sambar masalas are crafted in-house without artificial colours or synthetic flavour enhancers.
+              </p>
+              <ul class="editorial-list-points">
+                <li><i class="fa-solid fa-check"></i> Daily Freshly Ground Batters</li>
+                <li><i class="fa-solid fa-check"></i> In-House Roasted Podis &amp; Masalas</li>
+                <li><i class="fa-solid fa-check"></i> Strict No-Palmolein Oil Policy</li>
+                <li><i class="fa-solid fa-check"></i> Hygienic Kitchen Protocols</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="editorial-story-row editorial-story-row--reverse reveal">
+            <div class="editorial-story-media">
+              <img src="assets/images/biryani-special.jpg" alt="SWAYAMPAAKAM Bagara Rice Specials and Dum Biryanis" loading="lazy" />
+            </div>
+            <div class="editorial-story-copy">
+              <div class="eyebrow eyebrow--left">BEYOND MORNING TIFFINS</div>
+              <h3 class="heading-md">Bagara Rice Specials, Dum Biryanis, Healthy Bites &amp; Parathas</h3>
+              <p>
+                While morning tiffins like Guntur Karam Idli, Nellore Ghee Karam Dosa, and Kodi Kura Chitti Garelu are at the heart of our menu, SWAYAMPAAKAM brings the same authenticity to lunch and dinner with aromatic Bagara Rice Specials, Spl Chicken Dum &amp; Fry Piece Biryanis, Sambar Rice Combos, Vindu Bhojanam, and Temple-style Pulihora.
+              </p>
+              <p>
+                For health-conscious diners, our <em>Swayampaakam Healthy Bites</em> celebrate nutrient-dense regional favourites including Pesarattu, Ragi Dosa, Jonna Dosa, and Brown Rice Dosa.
+              </p>
+              <div style="margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+                <a href="why-choose-us.html" class="btn-editorial-link">
+                  <span>Read Our Food Philosophy</span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRANCHISE CTA BANNER -->
+    <section class="franchise-section" style="padding: 5rem 0;">
+      <div class="franchise-bg-pattern" aria-hidden="true"></div>
+      <div class="container franchise-container">
+        <div class="franchise-bottom-bar reveal">
+          <div>
+            <div class="eyebrow eyebrow--left eyebrow--light" style="margin-bottom: 0.5rem;">PARTNER WITH US</div>
+            <p class="franchise-bottom-text">
+              Bring the authentic taste of SWAYAMPAAKAM to your city.
+            </p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <button type="button" class="btn btn-turmeric js-open-franchise-modal">
+              <span>Become a Franchise Partner</span>
+              <i class="fa-solid fa-handshake"></i>
+            </button>
+            <a href="franchise.html" class="btn btn-outline-light">
+              <span>Explore Franchise Model</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="brand-logo" aria-label="SWAYAMPAAKAM Home">
+            <img src="assets/images/swayampakam-logo.png" alt="SWAYAMPAAKAM" />
+          </a>
+          <p class="footer-brand-desc">
+            Celebrating the richness of authentic South Indian cuisine with freshly prepared tiffins, signature rice specials, and hygienic homely cooking without palmolein oil.
+          </p>
+          <p class="footer-tagline">"Authentic Taste. Homely Goodness."</p>
+          <div class="footer-socials" aria-label="Social Media Links">
+            <a href="contact.html" class="social-link" aria-label="SWAYAMPAAKAM on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="contact.html" class="social-link" aria-label="SWAYAMPAAKAM on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="contact.html" class="social-link" aria-label="SWAYAMPAAKAM on YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="franchise.html">Franchise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Our Menu</h3>
+          <ul class="footer-links">
+            <li><a href="menu.html?category=tiffins">Idli &amp; Vada Specials</a></li>
+            <li><a href="menu.html?category=tiffins">Dosa &amp; Poori Specials</a></li>
+            <li><a href="menu.html?category=healthy-combos">Swayampaakam Healthy Bites</a></li>
+            <li><a href="menu.html?category=rice">Bagara &amp; Biryani Specials</a></li>
+            <li><a href="menu.html?category=rice">White Rice &amp; Sambar Rice</a></li>
+            <li><a href="menu.html?category=healthy-combos">Combo Rice Bowls</a></li>
+            <li><a href="menu.html?category=snacks-beverages">Parathas, Snacks &amp; Beverages</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Get in Touch</h3>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>[Restaurant Address Placeholder – To Be Confirmed]</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span>[Phone Number Placeholder – To Be Confirmed]</span></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>[Email Address Placeholder – To Be Confirmed]</span></li>
+            <li><i class="fa-regular fa-clock" aria-hidden="true"></i><span>[Business Hours Placeholder – To Be Confirmed]</span></li>
+          </ul>
+          <button type="button" class="btn btn-turmeric js-open-franchise-modal" style="width: 100%; padding: 0.9rem 1.2rem; font-size: 0.8rem;">
+            <span>Become a Franchise Partner</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SWAYAMPAAKAM. All Rights Reserved.</p>
+        <p>Authentic South Indian Restaurant &bull; Tiffins &bull; Rice Specials &bull; Franchise</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FRANCHISE ENQUIRY POPUP MODAL -->
+  <div class="modal-backdrop" id="franchiseModal" role="dialog" aria-modal="true" aria-labelledby="franchiseModalTitle" aria-describedby="franchiseModalSubtitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="modal-close-btn" id="closeFranchiseModal" aria-label="Close Franchise Enquiry Popup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div id="franchiseFormView">
+        <div class="modal-header">
+          <div class="eyebrow eyebrow--left" style="margin-bottom: 0.45rem;">FRANCHISE PARTNERSHIP ENQUIRY</div>
+          <h2 class="modal-title" id="franchiseModalTitle">Let's Build Something Delicious Together!</h2>
+          <p class="modal-subtitle" id="franchiseModalSubtitle">
+            Interested in bringing SWAYAMPAAKAM to your city? Share your details and our team will get in touch.
+          </p>
+        </div>
+
+        <form class="franchise-form" id="franchiseEnquiryForm" novalidate>
+          <div class="form-group" id="groupFullName">
+            <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" autocomplete="name" required />
+            <span class="form-error" id="errorFullName" role="alert">Please enter your full name (at least 2 characters).</span>
+          </div>
+
+          <div class="form-group" id="groupMobile">
+            <label for="mobileNumber" class="form-label">Mobile Number <span class="req">*</span></label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" class="form-control" placeholder="e.g. +91 98765 43210" autocomplete="tel" required />
+            <span class="form-error" id="errorMobile" role="alert">Please enter a valid 10-digit Indian mobile number (starting with 6–9).</span>
+          </div>
+
+          <div class="form-group" id="groupEmail">
+            <label for="emailAddress" class="form-label">Email Address</label>
+            <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="you@example.com (Optional)" autocomplete="email" />
+            <span class="form-error" id="errorEmail" role="alert">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group" id="groupCity">
+            <label for="cityLocation" class="form-label">City / Location <span class="req">*</span></label>
+            <input type="text" id="cityLocation" name="cityLocation" class="form-control" placeholder="Enter target city or locality" autocomplete="address-level2" required />
+            <span class="form-error" id="errorCity" role="alert">Please enter your city or preferred location.</span>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="investmentRange" class="form-label">Preferred Investment Range</label>
+            <select id="investmentRange" name="investmentRange" class="form-control">
+              <option value="">Select Investment Range (Optional)</option>
+              <option value="Below ₹5 Lakhs">Below ₹5 Lakhs</option>
+              <option value="₹5–10 Lakhs">₹5–10 Lakhs</option>
+              <option value="₹10–20 Lakhs">₹10–20 Lakhs</option>
+              <option value="₹20–30 Lakhs">₹20–30 Lakhs</option>
+              <option value="Above ₹30 Lakhs">Above ₹30 Lakhs</option>
+              <option value="Not Decided Yet">Not Decided Yet</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="enquiryMessage" class="form-label">Message (Optional)</label>
+            <textarea id="enquiryMessage" name="enquiryMessage" class="form-control" placeholder="Tell us about your background, preferred locality, or any questions..."></textarea>
+          </div>
+
+          <div class="form-submit-wrap">
+            <button type="submit" class="btn btn-turmeric">
+              <span>Submit Franchise Enquiry</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-success-state" id="franchiseSuccessView" aria-live="polite">
+        <div class="success-emblem"><i class="fa-solid fa-check"></i></div>
+        <h3 class="modal-success-title">Enquiry Details Validated &amp; Recorded</h3>
+        <p class="modal-success-desc">
+          Thank you for your interest in partnering with <strong>SWAYAMPAAKAM</strong>. Your enquiry details have been validated in this interactive frontend preview and structured for backend CRM / email integration:
+        </p>
+        <dl class="modal-summary-dl" id="enquirySummaryList"></dl>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-maroon" id="resetFranchiseFormBtn"><span>Submit Another Enquiry</span></button>
+          <button type="button" class="btn btn-turmeric" id="doneFranchiseModalBtn"><span>Close Window</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
