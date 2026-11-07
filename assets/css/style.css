@@ -1144,7 +1144,6 @@ button {
   font-size: 1.08rem;
   font-weight: 600;
   color: var(--dark-text);
-  flex-shrink: 0;
 }
 
 .menu-badge-must {
@@ -2148,5 +2147,11 @@ textarea.form-control {
 
   .modal-summary-dl {
     grid-template-columns: 1fr;
+  }
+  .btn-header-franchise{display:none}
+}
+@media (min-width:768px) {
+  .menu-item-name {
+    flex-shrink: 0;
   }
 }
